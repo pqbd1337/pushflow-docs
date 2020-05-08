@@ -1,0 +1,17 @@
+{
+  "spellright.language": [
+    "en",
+    "ru"
+  ],
+  "spellright.documentTypes": [
+    "latex",
+    "plaintext",
+    "markdown"
+  ],
+  "cSpell.enableFiletypes": [
+    "markdown"
+  ],
+  "cSpell.words": [
+    "Фида"
+  ]
+}
