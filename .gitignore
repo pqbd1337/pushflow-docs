@@ -12,10 +12,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-aws-config.json
-config.js
-ecosystem.config.js
-
 .prettierrc
 .cache/**
 .cache/**/**

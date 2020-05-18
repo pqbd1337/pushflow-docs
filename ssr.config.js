@@ -2,7 +2,7 @@ module.exports = {
   template: './index.html',
   maxAge: 60 * 60 * 1000,
   config: {
-    basePath: 'https://docs.pushflow.net/',
+    basePath: '/',
     homepage: 'README.md',
     auto2top: true,
     loadNavbar: true,
