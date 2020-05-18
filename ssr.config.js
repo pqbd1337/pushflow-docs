@@ -9,5 +9,6 @@ module.exports = {
     loadSidebar: true,
     maxLevel: 3,
     subMaxLevel: 3,
+    themeable: {},
   },
 };
