@@ -1,3 +1,4 @@
-# Headline
+# Chose docs language
 
-> An awesome project.
+### [English](/en/) or [Russian](/ru/)
+

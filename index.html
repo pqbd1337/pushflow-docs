@@ -36,6 +36,7 @@
     }
   </style>
   <script>
+
     window.$docsify = {
       // name: 'Pushflow Documentation',
       repo: '',
@@ -44,7 +45,10 @@
       loadNavbar: true,
       loadSidebar: true,
       maxLevel   : 3, 
-			subMaxLevel: 3,
+      subMaxLevel: 3,
+      basePath: window.location.href.indexOf('localhost') ? '/' : '/docs/',
+    
+      // routerMode: 'history',
       // 5. docsify-themeable
 			themeable : { 
 				// readyTransition : false, 

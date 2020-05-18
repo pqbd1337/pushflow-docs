@@ -4,7 +4,7 @@ module.exports = (shipit) => {
   shipit.initConfig({
     default: {
       deployTo: '/usr/share/push-server/docs',
-      repositoryUrl: 'git@github.com:ykshev/push-landings.git',
+      repositoryUrl: 'git@github.com:ykshev/pushflow-docs.git',
       ignores: ['.git', '.vscode', 'node_modules'],
       keepReleases: 5,
       deploy: {
