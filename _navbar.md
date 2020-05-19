@@ -1,3 +1,3 @@
-* [En](/)
+* [En](/en/)
 * [Ru](/ru/)
-* [Назад к Pushflow](https://pushflow.net/app/signup)
+* [Back to Pushflow](https://pushflow.net/app/signup)
