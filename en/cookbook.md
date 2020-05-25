@@ -11,7 +11,7 @@ In ```<head></head>``` we add the following script:
   <script>
     function toOffer(e) {
       e.preventDefault();
-      pushflowSubscription();
+      PushflowSDK.askSubscription();
     }
   </script>
   ```
@@ -42,7 +42,7 @@ Integrate Pushflow script [by usual instruction](/en/feed_collect). Then in ```<
 
     window.onfocus = function() {
       if (isLeftPage) {
-        setTimeout(pushflowSubscription(), 500);
+        setTimeout(PushflowSDK.askSubscription(), 500);
       }
     };
   </script>
@@ -70,7 +70,7 @@ It is also possible that the user will forget the old tab for a long time and th
 
     window.onfocus = function() {
       if (getCookie('isLeftPage') == 1 || isLeftPage) {
-        setTimeout(pushflowSubscription(), 500);
+        setTimeout(PushflowSDK.askSubscription(), 500);
       }
     };
 
@@ -111,7 +111,7 @@ If you want to ask for a subscription from users who have left your publishing t
     "load",
     function() {
       if (getCookie('isLeftPage') == 1) {
-        setTimeout(pushflowSubscription(), 1500);
+        setTimeout(PushflowSDK.askSubscription(), 1500);
       }
     },
     true
@@ -137,7 +137,7 @@ If you want to ask for a subscription from all users who have logged in to your 
       setTimeout(setNonUniqCookeie(), 3000);
 
       if (getCookie('isNonUniq') == 1) {
-        setTimeout(pushflowSubscription(), 1500);
+        setTimeout(PushflowSDK.askSubscription(), 1500);
       }
     },
     true
@@ -155,19 +155,19 @@ If you want to ask for a subscription from all users who have logged in to your 
 </script>
 ```
 In this case, no additional scripts should be added to the button to go to the offshore.
-
+<!-- 
 
 ## Subscription if URL parameter is present
 ***Scenario:*** 
 We want the subscription script to trigger only if there is some key in the URL of the page, for example ```&p=1```. This can be useful during tests with and without a subscription, just take a double of the link in the tracker and add ```&p=1``` to it. Now you will see a subscription window in this branding and not a keyless one.
 
 ***Realization:*** 
-Integrate the Pushflow script [following the usual instructions](/en/feed_collect). Next, in the integrated script we find the line ``` function pushflowSubscription() {``` and below it we add the following condition ```if (window.location.href.indexOf('&p=1') < 0) return;```. As a result, we get the script of the view:
+Integrate the Pushflow script [following the usual instructions](/en/feed_collect). Next, in the integrated script we find the line ``` function PushflowSDK.askSubscription() {``` and below it we add the following condition ```if (window.location.href.indexOf('&p=1') < 0) return;```. As a result, we get the script of the view:
 ```
   ...
-  function pushflowSubscription() {
+  function PushflowSDK.askSubscription() {
     if (window.location.href.indexOf('&p=1') < 0) return;
   ....
 ```
 That's it.
-<!-- ## Параллельный сбор своей пуш-базы с другими сервисами пуш-подписок -->
+## Параллельный сбор своей пуш-базы с другими сервисами пуш-подписок -->
