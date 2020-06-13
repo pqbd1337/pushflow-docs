@@ -9,6 +9,7 @@
 - **Collecting subscriptions**
 - [Create and set up feed](/en/feed.md)
 - [Collecting subscriptions in feed](/en/feed_collect.md)
+- [Pushflow SDK](/en/sdk.md)
 - [Redirect carousel setting](/en/feed_carosule.md)
 - [Useful tips and scripts](/en/cookbook.md)
 - **Sending notifications**
