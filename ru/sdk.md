@@ -18,7 +18,8 @@ PushflowSDK.init({
   onDeniedCallback: function() {},
   workerPath: "/sw-pushflownet.js",
   widgets: {
-    isShowDialog: true,
+    isShowRobot: false,
+    isShowDialog: false,
     dialogOptions: {
       position: 'top-center',
       isLockBackground: false,
