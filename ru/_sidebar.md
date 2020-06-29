@@ -15,5 +15,3 @@
 - **Отправка уведомлений**
 - [Кампании](/ru/campaign.md)
 - [Креативы](/ru/creative.md)
-- **Утилиты**
-- [Pushflow Traffic Quality](/ru/fraud.md)
